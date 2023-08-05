@@ -1,4 +1,4 @@
-// Imporing part
+// Importing part
 import DownloadQrCodeComponent from "@/components/downloadQrCodeComponent";
 
 // Exporting download component as default
