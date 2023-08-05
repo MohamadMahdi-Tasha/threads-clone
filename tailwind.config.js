@@ -9,9 +9,8 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        themeColor: '#242526'
-      }
+      fontFamily: {primary: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif'},
+      colors: {themeColor: '#242526'}
     },
   },
   plugins: [],
