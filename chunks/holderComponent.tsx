@@ -7,7 +7,7 @@ interface propsTypes {
 export default function HolderComponent({children}:propsTypes):JSX.Element {
     // Returning JSX
     return (
-        <div className={'max-w-[1200px] mx-auto p-[10px]'}>
+        <div className={'max-w-[1200px] mx-auto px-[10px] lg:py-0 py-[10px]'}>
             {children}
         </div>
     );
