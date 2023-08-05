@@ -6,7 +6,7 @@ export default function HomePage():JSX.Element {
     // Returning JSX
     return (
         <HolderComponent>
-            <header className={'py-[20px]'}>
+            <header className={'py-[20px] lg:block hidden'}>
                 <h1 className={'text-white font-bold text-2xl'}>Threads</h1>
             </header>
             <main className={'flex justify-center items-center pt-[70px]'}>
@@ -31,6 +31,7 @@ export default function HomePage():JSX.Element {
                             </a>
                         </div>
                     </div>
+                    <h1 className={'text-center text-white font-bold text-4xl mb-[20px] lg:hidden block'}>Threads</h1>
                     <h6 className={'text-center text-white font-bold'}>Get the app</h6>
                 </div>
             </main>
