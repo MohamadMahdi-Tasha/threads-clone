@@ -1,5 +1,6 @@
-// Imporing Part
+// Importing Part
 import type { Metadata } from 'next';
+import './index.css';
 
 // Exporting meta data of pages
 export const metadata: Metadata = {
