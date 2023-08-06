@@ -5,6 +5,7 @@
 import {useState} from "react";
 import EmbedCodeDropdownComponent from "@/components/embedCodeDropdownComponent";
 import DownloadModalComponent from "@/components/downloadModalComponent";
+import Link from 'next/link';
 
 // Exporting thread component as default
 export default function ThreadComponent():JSX.Element {
@@ -15,13 +16,13 @@ export default function ThreadComponent():JSX.Element {
     return (
         <div>
             <div className={'flex lg:flex-row flex-col lg:items-start items-start justify-between gap-5 mb-3'}>
-                <a href={'#'} className={'flex lg:flex-row flex-col lg:items-center items-start gap-3'}>
+                <Link href={'/as/thread/asdasds'} className={'flex lg:flex-row flex-col lg:items-center items-start gap-3'}>
                     <img  src="https://picsum.photos/100/100" alt="sylie.jahed" className={'lg:w-[50px] object-cover w-full h-[200px] lg:h-[50px] lg:rounded-full'} />
                     <div>
                         <span className={'text-white mb-3 block font-bold'}>sylie.jahad</span>
                         <p className={'text-white'}>ايد باورتون نشه ولي الآن بزرگترين چالش و التهاب زندگي من، سالم خواريه از طرف خودم نه ها اطرافيانم😕</p>
                     </div>
-                </a>
+                </Link>
                 <div className={'flex gap-3'}>
                     <span className={'text-barcelonaMediaOutline block text-sm'}>18h</span>
                     <EmbedCodeDropdownComponent />
