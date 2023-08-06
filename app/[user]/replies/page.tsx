@@ -7,8 +7,8 @@ import UserInfoComponent from "@/components/userInfoComponent";
 import ThreadsOrRepliesComponent from "@/components/threadsOrRepliesComponent";
 import UserPageDownloadComponent from "@/components/userPageDownloadComponent";
 
-// Exporting user page (functional component) as default
-export default function UserPage():JSX.Element {
+// Exporting user replies page (functional component) as default
+export default function UserRepliesPage():JSX.Element {
     // Returning JSX
     return (
         <HolderComponent small>
@@ -23,9 +23,10 @@ export default function UserPage():JSX.Element {
                         followersCount={35000}
                         link={'https://www.google.com'}
                     />
-                    <ThreadsOrRepliesComponent activePart={'threads'} id={'sylie.jahed'} />
+                    <ThreadsOrRepliesComponent activePart={'replies'} id={'sylie.jahed'} />
                 </header>
                 <main>
+                    <ThreadComponent />
                     <ThreadComponent />
                 </main>
             </section>
