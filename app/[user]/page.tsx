@@ -25,7 +25,7 @@ export default function UserPage():JSX.Element {
                     />
                     <ThreadsOrRepliesComponent activePart={'threads'} id={'sylie.jahed'} />
                 </header>
-                <main>
+                <main className={'[&>div:not(:last-of-type)]:border-b [&>div:not(:last-of-type)]:pb-[15px] [&>div:not(:last-of-type)]:border-b-barcelonaMediaOutline flex flex-col gap-5'}>
                     <ThreadComponent />
                 </main>
             </section>

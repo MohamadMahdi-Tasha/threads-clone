@@ -13,7 +13,7 @@ export default function UserRepliesPage():JSX.Element {
     return (
         <HolderComponent small>
             <header className={'py-[20px] flex items-center justify-center'}><ThemeTogglerComponent /></header>
-            <section>
+            <section className={'mb-10'}>
                 <header>
                     <UserInfoComponent
                         title={'بلاگر درسي | ساينا شيخ نواز جاهد ( سايلي)'}
@@ -23,9 +23,10 @@ export default function UserRepliesPage():JSX.Element {
                         followersCount={35000}
                         link={'https://www.google.com'}
                     />
-                    <ThreadsOrRepliesComponent activePart={'replies'} id={'sylie.jahed'} />
+                    <ThreadsOrRepliesComponent activePart={'threads'} id={'sylie.jahed'} />
                 </header>
-                <main>
+                <main className={'[&>div:not(:last-of-type)]:border-b [&>div:not(:last-of-type)]:pb-[15px] [&>div:not(:last-of-type)]:border-b-barcelonaMediaOutline flex flex-col gap-5'}>
+                    <ThreadComponent />
                     <ThreadComponent />
                     <ThreadComponent />
                 </main>
