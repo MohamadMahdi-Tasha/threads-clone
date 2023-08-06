@@ -1,6 +1,6 @@
 // importing Part
-import DownloadQrCodeComponent from "@/components/downloadQrCodeComponent";
 import ModalComponent from "@/chunks/modalComponent";
+import DownloadComponent from "@/components/downloadComponent";
 
 // Defining type of props
 interface typeOfProps {
@@ -13,7 +13,7 @@ export default function DownloadModalComponent({isOpened, closeFunction}:typeOfP
     // Returning JSX
     return (
         <ModalComponent isOpened={isOpened} closeFunction={closeFunction}>
-            <DownloadQrCodeComponent />
+            <DownloadComponent />
         </ModalComponent>
     );
 }
