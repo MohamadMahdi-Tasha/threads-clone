@@ -13,12 +13,12 @@ interface typeOfProps {
 export default function InfoBottomComponent({followersCount, id, link}:typeOfProps):JSX.Element {
     // Returning JSX
     return (
-        <div className={'flex items-center justify-between gap-3'}>
-            <div className={'flex items-center'}>
+        <div className={'flex lg:flex-row flex-col lg:items-center items-start justify-between gap-3'}>
+            <div className={'flex lg:flex-row flex-col lg:items-center items-start'}>
                 <FollowersCountComponent followersCount={followersCount} />
                 {
                     (link !== undefined)
-                        ? <a className={'text-gray-500 text-sm truncate ml-3 hover:underline'} href={link}>{link}</a>
+                        ? <a className={'text-gray-500 text-sm truncate lg:ml-3 hover:underline'} href={link}>{link}</a>
                         : false
                 }
             </div>

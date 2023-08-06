@@ -27,7 +27,7 @@ export default function DropdownComponent({children}:propsTypes):JSX.Element {
             </button>
             <div
                 data-opened={isOpened}
-                className={'absolute right-0 overflow-hidden top-full data-[opened="true"]:w-[200px] data-[opened="false"]:w-[50px] data-[opened="true"]:opacity-100 data-[opened="false"]:opacity-0 rounded-xl bg-themeColor/10 transition-all backdrop-blur flex flex-col border border-barcelonaMediaOutline/10 [&>button:not(:last-of-type)]:border-b-2 [&>button:not(:last-of-type)]:border-b-barcelonaMediaOutline data-[opened="false"]:invisible data-[opened="true"]:visible z-20'}
+                className={'absolute lg:right-0 right-auto lg:left-auto left-0 overflow-hidden top-full data-[opened="true"]:w-[200px] data-[opened="false"]:w-[50px] data-[opened="true"]:opacity-100 data-[opened="false"]:opacity-0 rounded-xl bg-themeColor/10 transition-all backdrop-blur flex flex-col border border-barcelonaMediaOutline/10 [&>button:not(:last-of-type)]:border-b-2 [&>button:not(:last-of-type)]:border-b-barcelonaMediaOutline data-[opened="false"]:invisible data-[opened="true"]:visible z-20'}
             >
                 {children}
             </div>

@@ -4,4 +4,4 @@
 @tailwind utilities;
 
 /*Custom Styles*/
-.btn-animation {@apply transition-all duration-300 hover:scale-105 active:scale-75;}
+.btn-animation {@apply transition-all duration-300 lg:hover:scale-105 lg:active:scale-75 active:scale-95;}
