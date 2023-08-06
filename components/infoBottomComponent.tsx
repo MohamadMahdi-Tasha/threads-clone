@@ -1,5 +1,6 @@
 // importing Part
 import DropdownComponent from "@/chunks/dropdownComponent";
+import DropdownButtonComponent from "@/chunks/dropdownButtonComponent";
 
 // Defining type of props
 interface typeOfProps {
@@ -33,8 +34,8 @@ export default function InfoBottomComponent({followersCount, id, link}:typeOfPro
                     </button>
                 </a>
                 <DropdownComponent>
-                    <button className={'text-start whitespace-nowrap p-[15px] text-sm text-white'}>Copy link</button>
-                    <button className={'text-start whitespace-nowrap p-[15px] text-sm text-red-600'}>Report</button>
+                    <DropdownButtonComponent>Copy link</DropdownButtonComponent>
+                    <DropdownButtonComponent textIsRed>Report</DropdownButtonComponent>
                 </DropdownComponent>
             </div>
         </div>
