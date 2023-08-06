@@ -1,5 +1,6 @@
 // importing Part
 import CopyLinkDropdownComponent from "@/components/copyLinkDropdownComponent";
+import FollowersCountComponent from "@/components/followersCountComponent";
 
 // Defining type of props
 interface typeOfProps {
@@ -14,10 +15,7 @@ export default function InfoBottomComponent({followersCount, id, link}:typeOfPro
     return (
         <div className={'flex items-center justify-between gap-3'}>
             <div className={'flex items-center'}>
-                <a href={'#'} className={'text-gray-500 text-sm truncate hover:underline'}>
-                    <span className={'mr-1'}>{followersCount.toLocaleString()}</span>
-                    followers
-                </a>
+                <FollowersCountComponent followersCount={followersCount} />
                 {
                     (link !== undefined)
                         ? <a className={'text-gray-500 text-sm truncate ml-3 hover:underline'} href={link}>{link}</a>
