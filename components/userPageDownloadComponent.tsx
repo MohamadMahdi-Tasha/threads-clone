@@ -13,7 +13,7 @@ export default function UserPageDownloadComponent():JSX.Element {
 
     // Return JSX
     return (
-        <div>
+        <div className={'xl:block hidden'}>
             <DownloadModalComponent closeFunction={() => setModalOpened(false)} isOpened={isModalOpened} />
             <DownloadQrCodeComponent withoutBottom onClick={() => setModalOpened(true)} />
         </div>
