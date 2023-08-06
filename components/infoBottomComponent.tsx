@@ -1,6 +1,5 @@
 // importing Part
-import DropdownComponent from "@/chunks/dropdownComponent";
-import DropdownButtonComponent from "@/chunks/dropdownButtonComponent";
+import CopyLinkDropdownComponent from "@/components/copyLinkDropdownComponent";
 
 // Defining type of props
 interface typeOfProps {
@@ -33,10 +32,7 @@ export default function InfoBottomComponent({followersCount, id, link}:typeOfPro
                         </svg>
                     </button>
                 </a>
-                <DropdownComponent>
-                    <DropdownButtonComponent>Copy link</DropdownButtonComponent>
-                    <DropdownButtonComponent textIsRed>Report</DropdownButtonComponent>
-                </DropdownComponent>
+                <CopyLinkDropdownComponent />
             </div>
         </div>
     );
