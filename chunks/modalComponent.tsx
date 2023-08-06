@@ -12,7 +12,7 @@ interface typeOfProps {
 export default function ModalComponent({isOpened, closeFunction, children}:typeOfProps):JSX.Element {
     // Returning JSX
     return (
-        <div data-opened={isOpened} className={'fixed top-0 left-0 min-h-[100vh] bg-themeColor/80 backdrop-blur w-full h-full z-20 overflow-auto transition-all data-[opened="true"]:opacity-100 data-[opened="true"]:visible data-[opened="false"]:opacity-0 data-[opened="false"]:invisible'}>
+        <div data-opened={isOpened} className={'fixed top-0 left-0 min-h-[100vh] bg-themeColor/80 backdrop-blur w-full h-full z-20 overflow-auto transition-all duration-500 data-[opened="true"]:opacity-100 data-[opened="true"]:visible data-[opened="false"]:opacity-0 data-[opened="false"]:invisible'}>
             <div className={'flex items-center p-[10px] mb-[20px]'}>
                 <button onClick={closeFunction} className={'btn-animation w-[40px] h-[40px] bg-gray-200 flex items-center justify-center rounded-full'}>
                     <svg aria-label="Close" color="rgb(119, 119, 119)" fill="rgb(119, 119, 119)" height="18" role="img" viewBox="0 0 24 24" width="18">
