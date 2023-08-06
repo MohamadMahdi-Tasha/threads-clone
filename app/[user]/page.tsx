@@ -13,7 +13,7 @@ export default function UserPage():JSX.Element {
     return (
         <HolderComponent small>
             <header className={'py-[20px] flex items-center justify-center'}><ThemeTogglerComponent /></header>
-            <section>
+            <section className={'mb-10'}>
                 <header>
                     <UserInfoComponent
                         title={'بلاگر درسي | ساينا شيخ نواز جاهد ( سايلي)'}
