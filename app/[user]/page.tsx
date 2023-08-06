@@ -3,9 +3,9 @@ import HolderComponent from "@/chunks/holderComponent";
 import ThemeTogglerComponent from "@/components/themeTogglerComponent";
 import ThreadComponent from "@/components/threadComponent";
 import FooterComponent from '@/components/footerComponent';
-import DownloadQrCodeComponent from "@/components/downloadQrCodeComponent";
 import UserInfoComponent from "@/components/userInfoComponent";
 import ThreadsOrRepliesComponent from "@/components/threadsOrRepliesComponent";
+import UserPageDownloadComponent from "@/components/userPageDownloadComponent";
 
 // Exporting user page (functional component) as default
 export default function UserPage():JSX.Element {
@@ -30,7 +30,7 @@ export default function UserPage():JSX.Element {
                 </main>
             </section>
             <FooterComponent />
-            <DownloadQrCodeComponent className={'fixed right-[20px] bottom-[20px]'} />
+            <UserPageDownloadComponent />
         </HolderComponent>
     );
 }
