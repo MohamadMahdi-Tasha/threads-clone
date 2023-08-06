@@ -23,7 +23,7 @@ export default function UserRepliesPage():JSX.Element {
                         followersCount={35000}
                         link={'https://www.google.com'}
                     />
-                    <ThreadsOrRepliesComponent activePart={'threads'} id={'sylie.jahed'} />
+                    <ThreadsOrRepliesComponent activePart={'replies'} id={'sylie.jahed'} />
                 </header>
                 <main className={'[&>div:not(:last-of-type)]:border-b [&>div:not(:last-of-type)]:pb-[15px] [&>div:not(:last-of-type)]:border-b-barcelonaMediaOutline flex flex-col gap-5'}>
                     <ThreadComponent />
