@@ -1,6 +1,6 @@
 // Defining type of props
 interface propsTypes {
-    children: any;
+    children: string;
     textIsRed?: boolean;
 }
 

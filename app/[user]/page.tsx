@@ -26,7 +26,7 @@ export default function UserPage():JSX.Element {
                         <BioComponent content={"#سایلی👩‍⚕️ هستمبا من همراه باش تا برای زندگیمون #برنامه_ریزی کنیمو شايد فراتر بريم..🚀سفارش دفترشطرنجي سايلي🗒️👇🏻"} />
                         <InfoBottomComponent id={'sylie.jahed'} followersCount={35000} link={'https://www.google.com'}/>
                     </div>
-                    <ThreadsOrRepliesComponent />
+                    <ThreadsOrRepliesComponent activePart={'threads'} />
                 </header>
                 <main>
                     <ThreadComponent />
