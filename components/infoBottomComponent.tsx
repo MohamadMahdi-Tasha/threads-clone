@@ -17,7 +17,7 @@ export default function InfoBottomComponent({followersCount, id, link}:typeOfPro
             <div className={'flex lg:flex-row flex-col lg:items-center items-start'}>
                 <FollowersCountComponent followersCount={followersCount} />
                 {
-                    (link !== undefined)
+                    (link !== '')
                         ? <a className={'text-gray-500 text-sm truncate lg:ml-3 hover:underline'} href={link}>{link}</a>
                         : false
                 }

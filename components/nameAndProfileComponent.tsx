@@ -30,7 +30,7 @@ export default function NameAndProfileComponent({title,id,img}:typeOfProps):JSX.
             </div>
             <img onClick={() => setProfileModalOpened(true)} className={'lg:w-[100px] w-full lg:h-[100px] h-[200px] object-cover lg:rounded-full btn-animation cursor-pointer'} src={img} alt="sylie.jahed"/>
             <ModalComponent isOpened={isProfileModalOpened} closeFunction={() => setProfileModalOpened(false)}>
-                <img className={'w-[200px] h-[200px] rounded-full'} src={img} alt="sylie.jahed"/>
+                <img className={'w-[200px] h-[200px] rounded-full'} src={img} alt={id}/>
             </ModalComponent>
         </div>
     );
