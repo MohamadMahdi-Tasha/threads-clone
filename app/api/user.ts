@@ -50,6 +50,15 @@ const users = [
                 replies: [],
                 date: '2023-07-18'
             }
+        ],
+        replies: [
+            {
+                id: 'mohamadjavadtasha.1',
+                title: 'MohamadJavadtasha',
+                img: ImageOfJavadTasha,
+                content: 'تولدت مبارک گل پسر ایشالا بالا بالا ها ببینمت 💗🎂🎂',
+                likesCount: 29,
+            }
         ]
     },
     {
@@ -78,6 +87,15 @@ const users = [
                 ],
                 date: '2023-09-18'
             },
+        ],
+        replies: [
+            {
+                id: 'mahditasha_',
+                title: 'MahdiTasha',
+                img: ImageOfMahdiTasha,
+                content: 'ماشالا باوا',
+                likesCount: 10,
+            }
         ]
     }
 ]
