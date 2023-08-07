@@ -43,7 +43,7 @@ export default function UserPage():JSX.Element {
                     }
                 </main>
             </section>
-            <FooterComponent />
+            <FooterComponent img={userInApi.img.src} id={userInApi.id} />
             <UserPageDownloadComponent />
         </HolderComponent>
     );
