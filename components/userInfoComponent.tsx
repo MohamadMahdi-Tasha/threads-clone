@@ -1,7 +1,6 @@
 // Defining type of props
 import NameAndProfileComponent from "@/components/nameAndProfileComponent";
 import BioComponent from "@/components/bioComponent";
-import {ThreadsAPI} from "threads-api";
 import InfoBottomComponent from "@/components/infoBottomComponent";
 
 interface typeOfProps {
@@ -10,12 +9,6 @@ interface typeOfProps {
 
 // Exporting userInfo component as default
 export default function UserInfoComponent({id}:typeOfProps):JSX.Element {
-    // Using threads api
-    const threadsAPI = new ThreadsAPI();
-    const username = '_junhoyeo';
-    const userID =  threadsAPI.getUserIDfromUsername(username);
-    console.log(userID)
-
     // Return JSX
     return (
         <div className={'mb-5'}>

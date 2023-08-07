@@ -1,5 +1,4 @@
 // Importing Part
-import { ThreadsAPI } from 'threads-api';
 import HolderComponent from "@/chunks/holderComponent";
 import ThemeTogglerComponent from "@/components/themeTogglerComponent";
 import ThreadComponent from "@/components/threadComponent";
@@ -10,9 +9,6 @@ import UserPageDownloadComponent from "@/components/userPageDownloadComponent";
 
 // Exporting user page (functional component) as default
 export default function UserPage():JSX.Element {
-    // Using hooks
-    const threadsAPI = new ThreadsAPI();
-
     // Returning JSX
     return (
         <HolderComponent small>
