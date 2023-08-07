@@ -29,7 +29,7 @@ export default function ThreadComponent({id, img, content, replie, likesCount, d
     if (replie) {
         return (
             <div>
-                <Link href={`/${id}`} className={'flex lg:flex-row flex-col lg:items-center items-start gap-3'}>
+                <Link href={`/${id}`} className={'flex lg:flex-row flex-col lg:items-center items-start gap-3 lg:w-auto w-full'}>
                     <img src={img} alt={id} className={'lg:w-[50px] object-cover w-full h-[200px] lg:h-[50px] lg:rounded-full'} />
                     <div>
                         <span className={'text-white mb-3 block font-bold'}>{id}</span>
@@ -66,13 +66,13 @@ export default function ThreadComponent({id, img, content, replie, likesCount, d
     } else {
         if (commentsObject[0] !== undefined) {
             return (
-                <div className={'justify-between flex gap-5'}>
-                    <div className={'flex gap-5'}>
-                        <div className={'flex items-center justify-center flex-col gap-3'}>
-                            <Link href={`/${id}/thread/${threadId}`} className={'flex lg:flex-row flex-col lg:items-center items-start gap-3'}>
+                <div className={'justify-between lg:flex block gap-5'}>
+                    <div className={'lg:flex block gap-5'}>
+                        <div className={'lg:flex block items-center justify-center flex-col gap-3'}>
+                            <Link href={`/${id}/thread/${threadId}`} className={'flex lg:flex-row flex-col lg:items-center items-start gap-3 lg:mb-0 mb-5 lg:w-auto w-full'}>
                                 <img src={img} alt={id} className={'lg:w-[50px] object-cover w-full h-[200px] lg:h-[50px] lg:rounded-full'} />
                             </Link>
-                            <div className={'w-[2px] h-[50px] rounded-xl bg-barcelonaMediaOutline'}></div>
+                            <div className={'w-[2px] lg:block hidden h-[50px] rounded-xl bg-barcelonaMediaOutline'}></div>
                             <div className={'flex'}>
                                 {
                                     commentsObject.slice(0, 2).map(replie => {
@@ -138,7 +138,7 @@ export default function ThreadComponent({id, img, content, replie, likesCount, d
             return (
                 <div>
                     <div className={'flex lg:flex-row flex-col lg:items-start items-start justify-between gap-5 mb-3'}>
-                        <Link href={`/${id}/thread/${threadId}`} className={'flex lg:flex-row flex-col lg:items-center items-start gap-3'}>
+                        <Link href={`/${id}/thread/${threadId}`} className={'flex lg:flex-row flex-col lg:items-center items-start gap-3 lg:w-auto w-full'}>
                             <img src={img} alt={id} className={'lg:w-[50px] object-cover w-full h-[200px] lg:h-[50px] lg:rounded-full'} />
                             <div>
                                 <span className={'text-white mb-3 block font-bold'}>{id}</span>
