@@ -6,7 +6,7 @@ import {useState} from "react";
 import EmbedCodeDropdownComponent from "@/components/embedCodeDropdownComponent";
 import DownloadModalComponent from "@/components/downloadModalComponent";
 import Link from 'next/link';
-import * as repl from "repl";
+import fromNow from '@/utils/fromNow';
 
 // Defining type of props
 interface propsType {
@@ -32,7 +32,7 @@ export default function ThreadComponent({id, img, content, replie, likesCount, d
                 <Link href={`/${id}`} className={'flex lg:flex-row flex-col lg:items-center items-start gap-3 lg:w-auto w-full'}>
                     <img src={img} alt={id} className={'lg:w-[50px] object-cover w-full h-[200px] lg:h-[50px] lg:rounded-full'} />
                     <div>
-                        <span className={'text-white mb-3 block font-bold'}>{id}</span>
+                        <span className={'text-white truncate mb-3 block font-bold'}>{id}</span>
                         <p className={'text-white'}>{content}</p>
                     </div>
                 </Link>
@@ -95,7 +95,7 @@ export default function ThreadComponent({id, img, content, replie, likesCount, d
                         </div>
                         <div className={'gap-3 flex flex-col justify-between'}>
                             <div>
-                                <span className={'text-white mb-3 block font-bold'}>{id}</span>
+                                <span className={'text-white truncate mb-3 block font-bold'}>{id}</span>
                                 <p className={'text-white'}>{content}</p>
                             </div>
                             <div>
@@ -128,7 +128,7 @@ export default function ThreadComponent({id, img, content, replie, likesCount, d
                     </div>
                     <div>
                         <div className={'flex gap-3'}>
-                            <span className={'text-barcelonaMediaOutline block text-sm'}>{date}</span>
+                            <span className={'text-barcelonaMediaOutline block text-sm truncate'}>{fromNow(date)}</span>
                             <EmbedCodeDropdownComponent />
                         </div>
                     </div>
@@ -141,12 +141,12 @@ export default function ThreadComponent({id, img, content, replie, likesCount, d
                         <Link href={`/${id}/thread/${threadId}`} className={'flex lg:flex-row flex-col lg:items-center items-start gap-3 lg:w-auto w-full'}>
                             <img src={img} alt={id} className={'lg:w-[50px] object-cover w-full h-[200px] lg:h-[50px] lg:rounded-full'} />
                             <div>
-                                <span className={'text-white mb-3 block font-bold'}>{id}</span>
+                                <span className={'text-white truncate mb-3 block font-bold'}>{id}</span>
                                 <p className={'text-white'}>{content}</p>
                             </div>
                         </Link>
                         <div className={'flex gap-3'}>
-                            <span className={'text-barcelonaMediaOutline block text-sm'}>{date}</span>
+                            <span className={'text-barcelonaMediaOutline block text-sm truncate'}>{fromNow(date)}</span>
                             <EmbedCodeDropdownComponent />
                         </div>
                     </div>
