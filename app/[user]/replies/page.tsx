@@ -35,6 +35,7 @@ export default function UserRepliesPage():JSX.Element {
                                 {
                                     userInApi.replies.map(item => (
                                         <ThreadComponent
+                                            replie
                                             img={item.img.src}
                                             content={item.content}
                                             likesCount={item.likesCount}
