@@ -7,6 +7,6 @@ interface typeOfProps {
 export default function BioComponent({content}:typeOfProps):JSX.Element {
     // Returning JSX
     return (
-        <p className={'text-white mb-5'}>{content}</p>
+        <p className={'dark:text-white text-black mb-5'}>{content}</p>
     );
 }

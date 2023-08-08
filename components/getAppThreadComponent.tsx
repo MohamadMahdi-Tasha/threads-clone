@@ -12,10 +12,10 @@ export default function GetAppThreadComponent():any {
 
     // Return JSX
     return (
-        <div className={'py-[20px] border-y border-y-barcelonaMediaOutline flex items-center justify-between gap-5 mb-10'}>
+        <div className={'py-[20px] border-y dark:border-y-barcelonaMediaOutline border-y-black/20 flex items-center justify-between gap-5 mb-10'}>
             <DownloadModalComponent closeFunction={() => setModalOpened(false)} isOpened={isModalOpened} />
-            <span className={'text-white text-md'}>👋 Get the app to like, reply and post.</span>
-            <button className={'text-black bg-white rounded-[10px] btn-animation text-sm px-[20px] py-[5px]'} onClick={() => setModalOpened(true)}>Get</button>
+            <span className={'dark:text-white text-black text-md'}>👋 Get the app to like, reply and post.</span>
+            <button className={'dark:text-black text-white dark:bg-white bg-black rounded-[10px] btn-animation text-sm px-[20px] py-[5px]'} onClick={() => setModalOpened(true)}>Get</button>
         </div>
     );
 }

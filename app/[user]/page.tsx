@@ -29,7 +29,7 @@ export default function UserPage():JSX.Element {
                     <UserInfoComponent id={pathname}/>
                     <ThreadsOrRepliesComponent activePart={'threads'} id={pathname} />
                 </header>
-                <main className={'[&>div:not(:last-of-type)]:border-b [&>div:not(:last-of-type)]:pb-[15px] [&>div:not(:last-of-type)]:border-b-barcelonaMediaOutline flex flex-col gap-5'}>
+                <main className={'[&>div:not(:last-of-type)]:border-b [&>div:not(:last-of-type)]:pb-[15px] dark:[&>div:not(:last-of-type)]:border-b-barcelonaMediaOutline [&>div:not(:last-of-type)]:border-b-black/20 flex flex-col gap-5'}>
                     {
                         userThreads.map(thread => <ThreadComponent
                             id={pathname}

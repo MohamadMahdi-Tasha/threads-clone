@@ -21,8 +21,8 @@ export default function ThreadsOrRepliesComponent({activePart, id}:threadsOrRepl
         return (
             <Link className={
                 (isActive)
-                    ? 'w-[50%] border-b border-b-white text-white'
-                    : 'w-[50%] border-b border-b-barcelonaMediaOutline text-barcelonaMediaOutline'
+                    ? 'w-[50%] border-b dark:border-b-white border-b-black dark:text-white text-black'
+                    : 'w-[50%] border-b dark:border-b-barcelonaMediaOutline border-b-black/20 dark:text-barcelonaMediaOutline text-black/20'
             } href={href}>
                 <button className={'py-[10px] w-full text-center'}>{children}</button>
             </Link>

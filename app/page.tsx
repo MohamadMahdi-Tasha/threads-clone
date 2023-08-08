@@ -8,7 +8,7 @@ export default function HomePage():JSX.Element {
     return (
         <HolderComponent>
             <header className={'lg:flex hidden min-h-[10vh] items-center'}>
-                <h1 className={'text-white font-bold text-2xl'}>Threads</h1>
+                <h1 className={'dark:text-white text-black font-bold text-2xl'}>Threads</h1>
             </header>
             <main className={'flex justify-center items-center lg:min-h-[90vh] min-h-[auto]'}>
                 <DownloadComponent />
